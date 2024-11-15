@@ -1,0 +1,148 @@
+.conteudo-container{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  max-width: 1300px;
+  min-height: 100vh;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+}
+
+.conteudo h2{
+  font-family:'Courier New', Courier, monospace;
+  font-size: 7rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.conteudo p{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 3rem;
+  margin-bottom: 15px;
+  margin-left: 4rem;
+  color: white;
+}
+
+.conteudo-icones{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 30px;
+  font-size: 50px;
+}
+
+.conteudo-icones a i{
+  transition: 0.5s;
+}
+
+.conteudo-icones a i:hover{
+  transform: scale(1.4);
+  color: rgb(180, 181, 182);
+}
+
+@keyframes typing {
+  0%  { width: 0; }
+  10% { width: 2ch;}
+  30% { width: 7ch;}
+  50% { width: 10ch; } 
+  60% { width: 12ch; } 
+  80% { width: 12ch;}
+  90% { width: 12ch;}
+  95% { width: 9ch;}
+  100% { width: 5ch; } 
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+.conteudo-front {
+  display: flex;
+  justify-content: center;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  font-size: 2.3rem;
+  margin-bottom: 30px;
+}
+
+.texto-fixo{
+  margin-right: 15px; 
+}
+
+.texto-front {
+  overflow: hidden;
+  border-right: 0.15em solid rgb(234, 233, 233);
+  white-space: nowrap;
+  animation: typing 3s steps(10, end) infinite, blink 0.7s step-end infinite;
+  width: 0;
+  box-sizing: border-box;
+}
+
+/* Media queries para responsividade */
+
+@media (max-width: 1000px) {
+  .conteudo h2 {
+    font-size: 4.5rem;
+  }
+}
+
+
+@media (max-width: 890px) {
+  .conteudo-container{
+    text-align: center;
+  }
+  .conteudo h2 {
+    font-size: 4rem;
+  }
+  
+  .conteudo p {
+    font-size: 2.5rem;
+    margin-left: 2rem;
+  }
+  
+  .conteudo-icones {
+    font-size: 40px;
+    gap: 20px;
+  }
+  
+  .conteudo-front {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 620px) {
+  .conteudo h2{
+    font-size: 3rem;
+  }
+}
+
+
+
+@media (max-width: 480px) {
+  .conteudo h2 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  
+  .conteudo p {
+    font-size: 2rem;
+    margin-left: 1rem;
+    text-align: center;
+  }
+  
+  .conteudo-icones {
+    font-size: 30px;
+    gap: 15px;
+  }
+  
+  .conteudo-front {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .texto-fixo {
+    margin-right: 5px;
+  }
+}

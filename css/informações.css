@@ -1,0 +1,140 @@
+.informacoes-bg{
+  background: rgb(0, 0, 0);
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.informacoes-finais{
+  padding-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+
+}
+
+.informacoes h2{
+  font-size: 3rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+}
+
+.informacoes p {
+  font-size: 1.5rem;
+  color: rgb(89, 89, 89);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-bottom: 50px;
+}
+
+.informacoes-lista {
+  font-size: 1.3rem;
+}
+
+.informacoes-lista li{
+  color: white;
+  margin-bottom: 10px;
+}
+
+/* Botão personalizado */
+.bn3 {
+  display: inline-block;
+  padding: 0.5em 1.7em;
+  margin: 0 0.1em 0.1em 0;
+  border: 0.16em solid rgb(255, 255, 255);
+  border-radius: 1em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
+  text-align: center;
+  transition: all 0.2s;
+  margin-top: 20px;
+}
+
+.bn3:hover {
+  color: black;
+  background-color: rgb(255, 255, 255);
+}
+
+.informacoes-icones{
+  align-items: start;
+  display: flex;
+  gap: 20px;
+  font-size: 40px;
+  margin-top: 25px;
+  margin-bottom: 100px;
+}
+
+.informacoes-icones a i{
+  transition: 0.5s;
+}
+
+.informacoes-icones a i:hover{
+  transform: scale(1.4);
+  color: rgb(180, 181, 182);
+}
+
+@media (max-width: 768px) {
+
+  .informacoes-bg{
+    margin-bottom: 40px;
+  }
+
+  .informacoes h2 {
+    font-size: 2.5rem; 
+  }
+
+  .informacoes p {
+    font-size: 1.2rem; 
+  }
+
+  .informacoes-lista {
+    font-size: 1.1rem;
+  }
+
+  .informacoes-finais {
+    gap: 30px; 
+  }
+
+  .bn3 {
+    padding: 0.4em 1.5em;
+    font-size: 0.9rem; 
+  }
+
+  .informacoes-icones {
+    font-size: 30px; 
+    gap: 15px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .informacoes-imagem{
+    margin-top: -140px;
+  }
+  .informacoes h2 {
+    font-size: 2rem; 
+  }
+  .informacoes-lista{
+    margin-top: -30px;
+  }
+
+  .informacoes p {
+    font-size: 1rem; 
+  }
+
+  .bn3 {
+    padding: 0.5em 1.5em; 
+    font-size: 0.8rem; 
+  }
+
+  .informacoes-icones {
+    font-size: 30px; 
+    margin-bottom: 130px;
+  }
+}

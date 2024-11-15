@@ -1,0 +1,158 @@
+.sobre-container {
+  padding-inline: 5rem;
+  color: white;
+  gap: 20px;
+  width: 100%;
+  max-width: 1300px;
+  min-height: 500px;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+}
+
+.sobre {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.sobre-mim h1 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 44px;
+  padding-inline: 5px;
+  letter-spacing: 0.1em;
+  display: flex;
+  flex-wrap: wrap;
+
+
+}
+
+.sobre-mim p {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.4rem;
+}
+
+.habilidades{
+  margin-top: 25px;
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+}
+.habilidades-icones{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.habilidades-icones img {
+  filter: invert(100%) brightness(100%);
+}
+
+.sobre-container {
+  padding-inline: 5rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.sobre {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  text-align: center;
+  flex-wrap: wrap; /* Permite que o conteúdo quebre em várias linhas */
+}
+
+.sobre-mim h1 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 3rem;
+  padding-inline: 5px;
+  letter-spacing: 0.1em;
+  word-wrap: break-word; /* Quebra o texto em palavras longas */
+}
+
+.sobre-mim p {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.4rem;
+  word-wrap: break-word; /* Quebra o texto em palavras longas */
+}
+
+.habilidades {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.habilidades-icones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.habilidades-icones img {
+  filter: invert(100%) brightness(100%);
+}
+
+
+@media (max-width: 1000px) {
+
+  .sobre {
+    gap: 20px;
+  }
+
+  .sobre-mim h1 {
+    font-size: 2.5rem;
+  }
+
+  .sobre-mim p {
+    font-size: 1.2rem;
+  }
+
+  .habilidades {
+    gap: 40px;
+    margin-bottom: 50px;
+  }
+
+  .habilidades h2 {
+    font-size:  1.3rem;
+  }
+}
+
+
+@media (max-width: 620px) {
+  .sobre-container {
+    padding-inline: 1rem;
+  }
+
+  .sobre-mim h1 {
+    font-size: 2rem;
+  }
+
+  .sobre-mim p {
+    font-size: 1rem;
+  }
+
+  .habilidades {
+    gap: 10px;
+    justify-content: start
+
+  }
+
+  .habilidades-icones img {
+    width: 40px;
+    gap: 10px;
+  }
+}
+
