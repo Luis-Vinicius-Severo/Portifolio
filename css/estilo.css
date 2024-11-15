@@ -1,7 +1,7 @@
-@import "./css/particle.css";
-@import "./css/inicio.css";
-@import "./css/sobre.css";
-@import "./css/projetos.css";
-@import "./css/informações.css";
-@import "./css/header.css";
-@import "./global/reset.css"
+@import "./particle.css";
+@import "./inicio.css";
+@import "./sobre.css";
+@import "./projetos.css";
+@import "./informações.css";
+@import "./header.css";
+@import "../global/reset.css"
