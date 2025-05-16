@@ -1,14 +1,18 @@
 .informacoes-bg{
   background: rgb(0, 0, 0);
-  width: 100%;
+  width: 100vw;
   min-height: 100vh;
   box-sizing: border-box;
   margin: 0 auto;
   overflow-x: hidden;
 }
 
+.informacoes-imagem img{
+  width: 360px;
+}
+
 .informacoes-finais{
-  padding-top: 50px;
+  padding-top: 90px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -39,7 +43,7 @@
   margin-bottom: 10px;
 }
 
-/* Botão personalizado */
+
 .bn3 {
   display: inline-block;
   padding: 0.5em 1.7em;
@@ -110,6 +114,9 @@
   .informacoes-icones {
     font-size: 30px; 
     gap: 15px; 
+  }
+  .informacoes-imagem img{
+    margin-top: 100px;
   }
 }
 
