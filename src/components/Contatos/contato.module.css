@@ -1,0 +1,193 @@
+.contato {
+  background: var(--cor-fundo-escuro);
+}
+
+.conteudoContato {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+  max-width: 1000px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+
+.colunaFoto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.containerFoto {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.fotoPerfil {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.fotoPerfil:hover {
+  transform: scale(1.02);
+}
+
+.botaoCurriculo {
+  padding: 14px 32px;
+  background: var(--cor-destaque);
+  color: var(--cor-preto);
+  text-decoration: none;
+  border-radius: var(--borda-arredondada);
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  border: 2px solid var(--cor-destaque);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.botaoCurriculo:hover {
+  background: transparent;
+  color: var(--cor-destaque);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(245, 158, 11, 0.2);
+}
+
+
+.colunaInformacoes {
+  padding: 1rem 0;
+}
+
+.tituloInformacoes {
+  color: var(--cor-texto-claro);
+  font-size: 1.8rem;
+  margin-bottom: 2.5rem;
+  font-weight: 600;
+}
+
+.infoItem {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--cor-borda);
+}
+
+.infoItem:last-of-type {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.rotuloInfo {
+  display: block;
+  color: var(--cor-destaque);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.valorInfo {
+  color: var(--cor-texto-claro);
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.valorInfo:hover {
+  color: var(--cor-primaria);
+}
+
+.redesSociais {
+  margin-top: 2.5rem;
+}
+
+.linksRedes {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.linkRede {
+  padding: 10px 5px;
+  background: var(--cor-card);
+  color: var(--cor-texto-claro);
+  text-decoration: none;
+  border-radius: var(--borda-arredondada);
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: 1px solid var(--cor-borda);
+  flex: 1;
+  min-width: 120px;
+  text-align: center;
+}
+
+.linkRede:hover {
+  background: var(--cor-primaria);
+  border-color: var(--cor-primaria);
+  transform: translateY(-2px);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .conteudoContato {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .colunaFoto {
+    order: 2;
+  }
+
+  .colunaInformacoes {
+    order: 1;
+    padding: 0;
+  }
+
+  .containerFoto {
+    max-width: 300px;
+  }
+
+  .linksRedes {
+    justify-content: center;
+  }
+
+  .linkRede {
+    flex: none;
+    min-width: 140px;
+  }
+}
+
+@media (max-width: 480px) {
+  .conteudoContato {
+    gap: 2rem;
+  }
+
+  .containerFoto {
+    max-width: 250px;
+  }
+
+  .botaoCurriculo {
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
+
+  .linksRedes {
+    flex-direction: column;
+  }
+
+  .linkRede {
+    width: 100%;
+  }
+
+  .tituloInformacoes {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+}

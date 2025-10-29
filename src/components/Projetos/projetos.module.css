@@ -1,0 +1,152 @@
+.gradeProjetos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.cartaoProjeto {
+  background: var(--cor-card);
+  border-radius: var(--borda-arredondada);
+  overflow: hidden;
+  box-shadow: var(--sombra-card);
+  transition: all 0.3s ease;
+  border: 2px solid var(--cor-borda);
+}
+
+.cartaoProjeto:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+}
+
+.imagemProjeto {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+}
+
+.imagemProjeto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.cartaoProjeto:hover .imagemProjeto img {
+  transform: scale(1.05);
+}
+
+.overlayProjeto {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 23, 42, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.cartaoProjeto:hover .overlayProjeto {
+  opacity: 1;
+}
+
+.linksProjeto {
+  display: flex;
+  gap: 1rem;
+}
+
+.linkDemo,
+.linkGitHub {
+  padding: 12px 24px;
+  background: var(--cor-primaria);
+  color: var(--cor-texto-claro);
+  text-decoration: none;
+  border-radius: var(--borda-arredondada);
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 2px solid var(--cor-primaria);
+}
+
+.linkDemo:hover,
+.linkGitHub:hover {
+  background: transparent;
+  color: var(--cor-primaria);
+  transform: translateY(-2px);
+}
+
+.infoProjeto {
+  padding: 1.5rem;
+}
+
+.tituloProjeto {
+  margin-bottom: 1rem;
+  color: var(--cor-texto-claro);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.descricaoProjeto {
+  color: var(--cor-texto);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.tecnologiasProjeto {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tagTecnologia {
+  background: var(--cor-tag);
+  color: var(--cor-texto-claro);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: 1px solid var(--cor-borda);
+  transition: all 0.3s ease;
+}
+
+.tagTecnologia:hover {
+  background: var(--cor-primaria);
+  border-color: var(--cor-primaria);
+  transform: translateY(-2px);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .gradeProjetos {
+    grid-template-columns: 1fr;
+  }
+
+  .linksProjeto {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  .linkDemo,
+  .linkGitHub {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .infoProjeto {
+    padding: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .gradeProjetos {
+    grid-template-columns: 1fr;
+  }
+
+  .imagemProjeto {
+    height: 200px;
+  }
+}

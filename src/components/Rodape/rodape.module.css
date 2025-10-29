@@ -1,0 +1,44 @@
+.rodape {
+  background: var(--cor-secundaria);
+  color: var(--cor-branco);
+  padding: 2rem 0;
+}
+
+.conteudoRodape {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.textoRodape {
+  color: #cbd5e1;
+}
+
+.linksRodape {
+  display: flex;
+  gap: 2rem;
+}
+
+.linkRodape {
+  color: var(--cor-branco);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.linkRodape:hover {
+  color: var(--cor-destaque);
+}
+
+@media (max-width: 768px) {
+  .conteudoRodape {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .linksRodape {
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
