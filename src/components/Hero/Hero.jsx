@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Hero.module.css';
+import Perfil from '/src/assets/perfil.jpg';
 
 const Hero = () => {
   return (
@@ -15,14 +16,18 @@ const Hero = () => {
               Crio experiências digitais incríveis com tecnologias modernas.
             </p>
             <div className={styles.botoesHero}>
-              <a href="#projetos" className="botao botao-primario">Ver Projetos</a>
-              <a href="#contato" className="botao botao-secundario">Entrar em Contato</a>
+              <a href="#projetos" className="botao botao-primario">
+                Ver Projetos
+              </a>
+              <a href="#contato" className="botao botao-secundario">
+                Entrar em Contato
+              </a>
             </div>
           </div>
           <div className={styles.imagemHero}>
             <div className={styles.containerImagem}>
               <div className={styles.imagemPerfil}>
-                <img src='../src/assets/perfil.jpg' alt="Luis Vinicius - Desenvolvedor Full Stack" />
+                <img src={Perfil} alt="Perfil" />
               </div>
             </div>
           </div>
