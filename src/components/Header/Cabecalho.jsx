@@ -15,7 +15,9 @@ const Cabecalho = () => {
           Luis Vinicius
         </a>
 
-        <div className={`${styles.menu} ${menuAberto ? styles.menuAberto : ''}`}>
+        <div
+          className={`${styles.menu} ${menuAberto ? styles.menuAberto : ''}`}
+        >
           <a href="#inicio" className={styles.link} onClick={fecharMenu}>
             Início
           </a>

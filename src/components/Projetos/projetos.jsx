@@ -11,7 +11,7 @@ const Projetos = () => {
       descricao:
         'Site completo para uma loja de bicicletas artesanais, com catálogo de produtos e informações da empresa.',
       imagem: Bike,
-      tecnologias: ['JavaScript', 'HTML5', 'CSS3'],
+      tecnologias: ['JavaScript', 'HTML', 'CSS'],
       github: 'https://github.com/Luis-Vinicius-Severo/bikcraft',
       demo: 'https://luis-vinicius-severo.github.io/bikcraft/',
     },
@@ -20,7 +20,7 @@ const Projetos = () => {
       descricao:
         'Site para hamburgueria com cardápio interativo e design moderno para melhor experiência do usuário.',
       imagem: Hamburgueria,
-      tecnologias: ['JavaScript', 'HTML5', 'CSS3'],
+      tecnologias: ['JavaScript', 'HTML', 'CSS'],
       github: 'https://github.com/Luis-Vinicius-Severo/Hamburgueria',
       demo: '#',
     },
@@ -29,7 +29,7 @@ const Projetos = () => {
       descricao:
         'Sistema de informações geográficas para visualização e consulta de dados de localização.',
       imagem: Localização,
-      tecnologias: ['JavaScript', 'HTML5', 'CSS3'],
+      tecnologias: ['JavaScript', 'HTML', 'CSS'],
       github: 'https://github.com/Luis-Vinicius-Severo/informacoes-locais',
       demo: 'https://luis-vinicius-severo.github.io/informacoes-locais',
     },
